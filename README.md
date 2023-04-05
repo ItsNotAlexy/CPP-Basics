@@ -1,15 +1,11 @@
-# CPP-Basics
-Notes for C++ basics.
-
-Author: Alexyy#4448 <br>
-Edited By: None
-
 # Variable definitions in C++
 
 - cout: cout is an object of the class ostream. It is used to display output on the screen.
 - cin: cin is an object of the class istream. It is used to take input from the keyboard.
 - printf: printf is a function used to display output on the screen.
 - endl: endl is a manipulator used to insert a new line in the output.
+- return: return is a keyword used to return a value from a function.
+<br>
 
 # Data types in C++
 - int: int is a data type used to store integer values. (1, 2, 3, etc.)
@@ -68,17 +64,40 @@ int main()
 
 ```
 
-# Exit Codes
+Output: Output when the user inputs "Y" or "y"
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    char answer;
+    cout << "Do you like C++? (y/n): ";
+    cin >> answer;
+    if(answer == 'y' || answer == 'Y'){
+        cout << "You like C++" << endl;
+        return 0;
+    }else{
+        cout << "You don't like C++" << endl;
+        return 0;
+    }
+}
+```
+> Note: The "||" operator is used to check if either of the conditions is true. 
+
+<br>
+
+# Common Exit Codes in C++
 
 - 0: Successful execution
 - 1: Unsuccessful execution
 - 2: Invalid syntax
-- 3: Invalid command
-- 4: Invalid file name
-- 5: Invalid directory name
-- 6: Invalid path
-- 7: Invalid drive
-- 8: Invalid device
-- 9: Invalid argument
-- 10: Invalid parameter
 <br>etc...
+
+# Common Errors in C++
+
+**Case**: Exit code 2 <br>
+Fix: Check the syntax of the program, Make sure that every line ends with a ";" and that every statement is written correctly.
+
+**Case**: Permission denied <br>
+Fix: Make sure that there isnt another program with the same name in the same directory is running. If there is, close it and try again.
