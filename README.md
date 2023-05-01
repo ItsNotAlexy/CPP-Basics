@@ -8,12 +8,12 @@
 <br>
 
 # Data types in C++
+- string: A string is a data type used to represent text or a sequence of characters (Names, Paragraph, etc.)
 - int: int is a data type used to store integer values. (1, 2, 3, etc.)
 - float: float is a data type used to store floating point values. (less precision than double)
 - double: double is a data type used to store - floating point values. (more precision than float)
 - char: char is a data type used to store character values. (a, b, c, etc.)
 - bool: bool is a data type used to store boolean values. (true or false)
-- void: void is a data type used to define functions that do not return any value.
 <br>
 
 # Example of a C++ program
